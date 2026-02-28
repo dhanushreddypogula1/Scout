@@ -1,0 +1,37 @@
+@import "./components.css";
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=Syne:wght@400;600;700;800&display=swap');
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg: #0a0a0f;
+  --bg2: #111118;
+  --bg3: #18181f;
+  --bg4: #22222c;
+  --border: #2a2a38;
+  --border2: #35354a;
+  --text: #e8e8f0;
+  --text2: #9898b0;
+  --text3: #5a5a72;
+  --accent: #6c63ff;
+  --accent2: #a78bfa;
+  --green: #34d399;
+  --amber: #fbbf24;
+  --red: #f87171;
+  --blue: #60a5fa;
+  --font-display: 'Syne', sans-serif;
+  --font-mono: 'DM Mono', monospace;
+  --radius: 8px;
+  --radius2: 12px;
+}
+
+html, body { height: 100%; overflow: hidden; }
+body { background: var(--bg); color: var(--text); font-family: var(--font-mono); }
+
+::-webkit-scrollbar { width: 4px; height: 4px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--border2); border-radius: 2px; }
+
+a { color: inherit; text-decoration: none; }
+button { font-family: var(--font-mono); cursor: pointer; }
+input, select, textarea { font-family: var(--font-mono); }
