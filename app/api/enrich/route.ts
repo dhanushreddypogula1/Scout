@@ -20,7 +20,7 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ ...cached.data, cached: true });
     }
 
-    const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash" });
+    const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" });
 
     const prompt = `You are a VC research analyst. Analyze this company and return a JSON object (no markdown, no backticks, no extra text) with exactly these fields:
 - summary: string (1-2 sentences about what they do and why it matters)
